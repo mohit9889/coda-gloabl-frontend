@@ -10,6 +10,10 @@ const Modal = (props) => {
         }
     }
 
+    const closeModal = () => {
+        setSelectedRecipe(null);
+    }
+
     return (
         <div className="custom-modal" onClick={handleClick}>
             <div className="row">
@@ -20,6 +24,7 @@ const Modal = (props) => {
                     <h1>{selectedRecipe.name}</h1>
                     <p>Price: {selectedRecipe.price}</p>
                     <p>{selectedRecipe.description}</p>
+                    <button onClick={closeModal}>Close</button>
                 </div>
             </div>
         </div>

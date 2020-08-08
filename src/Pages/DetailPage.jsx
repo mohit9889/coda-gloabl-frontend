@@ -19,6 +19,7 @@ const DetailPage = (props) => {
 
     const goBack = () => {
         history.goBack();
+        console.log("press");
     }
 
     return (

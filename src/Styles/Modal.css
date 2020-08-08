@@ -32,3 +32,11 @@
     width: 300px;
 }
 
+.custom-modal .row .content button {
+    height: 40px;
+    background-color: var(--black);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 100%;
+}
