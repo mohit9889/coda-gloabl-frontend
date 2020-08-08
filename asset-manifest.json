@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/coda-gloabl-frontend/static/css/main.d73fa5e2.chunk.css",
+    "main.js": "/coda-gloabl-frontend/static/js/main.5d888687.chunk.js",
+    "main.js.map": "/coda-gloabl-frontend/static/js/main.5d888687.chunk.js.map",
+    "runtime-main.js": "/coda-gloabl-frontend/static/js/runtime-main.efab1662.js",
+    "runtime-main.js.map": "/coda-gloabl-frontend/static/js/runtime-main.efab1662.js.map",
+    "static/js/2.dc387051.chunk.js": "/coda-gloabl-frontend/static/js/2.dc387051.chunk.js",
+    "static/js/2.dc387051.chunk.js.map": "/coda-gloabl-frontend/static/js/2.dc387051.chunk.js.map",
+    "index.html": "/coda-gloabl-frontend/index.html",
+    "precache-manifest.c297b8feaa6111ac7be65930e00675ff.js": "/coda-gloabl-frontend/precache-manifest.c297b8feaa6111ac7be65930e00675ff.js",
+    "service-worker.js": "/coda-gloabl-frontend/service-worker.js",
+    "static/css/main.d73fa5e2.chunk.css.map": "/coda-gloabl-frontend/static/css/main.d73fa5e2.chunk.css.map",
+    "static/js/2.dc387051.chunk.js.LICENSE.txt": "/coda-gloabl-frontend/static/js/2.dc387051.chunk.js.LICENSE.txt",
+    "static/media/Illustration1.png": "/coda-gloabl-frontend/static/media/Illustration1.7cd92069.png",
+    "static/media/Illustration2.png": "/coda-gloabl-frontend/static/media/Illustration2.dfb2ea3c.png",
+    "static/media/Illustration3.png": "/coda-gloabl-frontend/static/media/Illustration3.fd3a054f.png",
+    "static/media/Illustration4.png": "/coda-gloabl-frontend/static/media/Illustration4.df92c811.png",
+    "static/media/index.css": "/coda-gloabl-frontend/static/media/Metropolis-SemiBold.2556a4f7.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efab1662.js",
+    "static/js/2.dc387051.chunk.js",
+    "static/css/main.d73fa5e2.chunk.css",
+    "static/js/main.5d888687.chunk.js"
+  ]
+}
