@@ -5,6 +5,7 @@ import { getRecipe } from "../api";
 import Card from "../Components/Card";
 import SearchBar from "../Components/SearchBar";
 import Modal from "../Components/Modal";
+import LoaderSpinner from "../Components/Loader";
 
 import BG1 from "../Assets/Images/Illustration1.png";
 import BG2 from "../Assets/Images/Illustration2.png";
@@ -15,18 +16,21 @@ import BG5 from "../Assets/Images/Illustration5.png";
 const HomePage = () => {
     const [recipes, setRecipes] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
+    const [loading, setloading] = useState(false);
 
     useEffect(() => {
+        setloading(true);
         const fetchRecipe = async () => {
             const data = await getRecipe();
-            console.log(data);
             setRecipes(data);
+            setloading(false);
         }
         fetchRecipe();
     }, [])
 
     return (
         <div className="container home-page">
+            <LoaderSpinner visible={loading}></LoaderSpinner>
             <img className="bg bg1" src={BG1} alt="" />
             <img className="bg bg2" src={BG2} alt="" />
             <img className="bg bg3" src={BG3} alt="" />
