@@ -1,0 +1,32 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: #F0F0F0;
+  --font-grey: #8A8A8A;
+}
+
+@font-face {
+  font-family: Metropolis;
+  src: url(./Assets/Fonts/Metropolis/Metropolis-Regular.otf);
+}
+
+@font-face {
+  font-family: Metropolis-Blod;
+  src: url(./Assets/Fonts/Metropolis/Metropolis-Bold.otf);
+}
+
+@font-face {
+  font-family: Metropolis-SemiBold;
+  src: url(./Assets/Fonts/Metropolis/Metropolis-SemiBold.otf);
+}
+
+body {
+  margin: 0;
+  font-family: Metropolis;
+  background-color: var(--grey);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
