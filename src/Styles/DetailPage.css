@@ -61,14 +61,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .col1 .image .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+  opacity: 1 !important;
 }
 
 .col1 .image .play-icon {
@@ -78,6 +80,7 @@
   transform: translate(-50%, -50%);
   width: 35px;
   height: 35px;
+  z-index: 20;
 }
 
 .col1 .heading {
@@ -156,6 +159,7 @@
   border-radius: 50%;
   color: white;
   background-color: black;
+  padding-top: 10px;
 }
 
 .col2 .circle-group .circle .number {

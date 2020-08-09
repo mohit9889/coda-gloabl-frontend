@@ -1,5 +1,6 @@
 import React from 'react';
 import "../Styles/DetailPage.css";
+import { Redirect } from "react-router-dom";
 
 import SearchBar from "../Components/SearchBar";
 
@@ -22,7 +23,7 @@ const DetailPage = (props) => {
         console.log("press");
     }
 
-    return (
+    return recipe ? (
         <div className="container detail-page">
             <img className="bg bg1" src={BG1} alt="" />
             <img className="bg bg2" src={BG2} alt="" />
@@ -106,8 +107,8 @@ const DetailPage = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        </div> 
+    ) : <Redirect to={"/"} />;
 }
 
 export default DetailPage;

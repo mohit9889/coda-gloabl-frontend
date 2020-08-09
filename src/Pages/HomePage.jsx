@@ -17,6 +17,7 @@ const HomePage = () => {
     const [recipes, setRecipes] = useState([]);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
     const [loading, setloading] = useState(false);
+    const [searchedRecipe, setSearchRecipe] = useState('');
 
     useEffect(() => {
         setloading(true);
@@ -24,9 +25,31 @@ const HomePage = () => {
             const data = await getRecipe();
             setRecipes(data);
             setloading(false);
+            localStorage.setItem("Recipes", JSON.stringify(data));
         }
         fetchRecipe();
     }, [])
+
+    const handleSearch = (event) => {
+        let currentValue = event.target.value;
+        setSearchRecipe(currentValue);
+        currentValue = currentValue.toLowerCase();
+        let currentRecipes = JSON.parse(localStorage.getItem("Recipes"));
+        
+        if(!currentValue) {
+            setRecipes(currentRecipes);
+            return;
+        }
+
+        currentRecipes = currentRecipes.filter((recipe, index) => {
+            let currentName = recipe.name.toLowerCase();
+            if (currentName.includes(currentValue)) {
+                return true;
+            }
+            return false;
+        })
+        setRecipes(currentRecipes);
+    }
 
     return (
         <div className="container home-page">
@@ -36,7 +59,7 @@ const HomePage = () => {
             <img className="bg bg3" src={BG3} alt="" />
             <img className="bg bg4" src={BG4} alt="" />
             <img className="bg bg5" src={BG5} alt="" />
-            <SearchBar />
+            <SearchBar searchedRecipe={searchedRecipe} handleSearch={handleSearch}/>
             <div className="header">
                 <p>CATEGORY</p>
                 <h1>Pizza & Noodles</h1>

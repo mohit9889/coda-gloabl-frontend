@@ -1,5 +1,5 @@
 .custom-modal {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     background: rgba(0, 0, 0, 0.8);
     width: 100%;

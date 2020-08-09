@@ -48,6 +48,10 @@
     margin-bottom: 50px;
 }
 
+.card img, .card .card-body {
+  border-radius: 15px;
+}
+
 .big-card {
   height: 425px;
   width: 280px;
@@ -92,6 +96,7 @@
 
 .card {
   position: relative;
+  border-radius: 15px;
 }
 
 .overlay {
@@ -109,6 +114,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 15px;
 }
 
 .overlay button {
