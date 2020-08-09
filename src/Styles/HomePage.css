@@ -134,6 +134,21 @@
   width: 100%;
 }
 
+.card .category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 .card .card-body .card-title {
     margin: 0;
     font-weight: bold;

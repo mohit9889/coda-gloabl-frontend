@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 const Card = (props) => {
-  const { id, image, name, price, description } = props.recipe;
+  const { id, image, name, price, description, category } = props.recipe;
   const history = useHistory();
   const { setSelectedRecipe } = props;
 
@@ -13,6 +13,7 @@ const Card = (props) => {
 
   return (
     <div style={{width: "100%", height: "100%"}}>
+      <p className="category"><span>{category}</span></p>
       <img className="card-img-top" src={image} alt="" />
       <div className="card-body">
         <p className="card-title">{name}</p>
